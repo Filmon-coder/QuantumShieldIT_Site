@@ -79,7 +79,7 @@ section.alt { background: var(--section); }
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
-  .logo-wrap img { height: 84px; }
+@media (min-width: 1500px) {
+  .logo-wrap img { height: 170px; }
 }
 
