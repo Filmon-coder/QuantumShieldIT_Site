@@ -71,3 +71,15 @@ section.alt { background: var(--section); }
 .footer .grid { display:grid; grid-template-columns: 1fr; gap: 8px; }
 .footer a { color: var(--accent); text-decoration: none; }
 .small { font-size: 13px; color: var(--muted); }
+/* === Logo size override === */
+.logo-wrap img {
+  height: 72px;   /* tweak to 64/80 if needed */
+  width: auto;    /* keep aspect ratio */
+  display: block;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .logo-wrap img { height: 84px; }
+}
+
