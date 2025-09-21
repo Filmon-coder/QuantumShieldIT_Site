@@ -71,15 +71,17 @@ section.alt { background: var(--section); }
 .footer .grid { display:grid; grid-template-columns: 1fr; gap: 8px; }
 .footer a { color: var(--accent); text-decoration: none; }
 .small { font-size: 13px; color: var(--muted); }
-/* === Logo size override === */
+/* === Logo size override (bigger) === */
 .logo-wrap img {
-  height: 72px;   /* tweak to 64/80 if needed */
-  width: auto;    /* keep aspect ratio */
+  height: 160px;     /* ~3x normal on mobile */
+  width: auto;
   display: block;
   object-fit: contain;
+  background: transparent;
 }
 
-@media (min-width: 1500px) {
-  .logo-wrap img { height: 170px; }
+@media (min-width: 768px) {
+  .logo-wrap img { height: 220px; }   /* big on desktop */
 }
+
 
